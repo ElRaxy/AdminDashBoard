@@ -1,0 +1,42 @@
+.footer {
+    padding: 20px 0;
+    font-size: 14px;
+    transition: all 0.4s;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer .copyright {
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.footer .credits {
+    text-align: center;
+    color: var(--text-primary);
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.footer .copyright strong,
+.footer .credits strong,
+.footer .copyright span,
+.footer .credits span {
+    color: var(--title-color);
+}
+
+/* Ajustes específicos para modo oscuro */
+.dark-mode .footer {
+    border-color: var(--border-color);
+}
+
+.dark-mode .footer .copyright,
+.dark-mode .footer .credits {
+    color: var(--text-primary);
+}
+
+.dark-mode .footer .copyright strong,
+.dark-mode .footer .credits strong,
+.dark-mode .footer .copyright span,
+.dark-mode .footer .credits span {
+    color: var(--title-color);
+}

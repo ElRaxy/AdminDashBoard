@@ -1,0 +1,425 @@
+/* Variables para el tema claro (default) */
+:root {
+    --bg-main: #f6f9ff;
+    --bg-card: #ffffff;
+    --bg-sidebar: #ffffff;
+    --text-primary: #012970;
+    --text-secondary: #899bbd;
+    --text-muted: #6c757d;
+    --title-color: #012970;
+    --subtitle-color: #4154f1;
+    --border-color: #ebeef4;
+    --shadow-color: rgba(1, 41, 112, 0.1);
+    --link-color: #4154f1;
+    --link-hover-bg: #f6f9ff;
+    --link-hover-color: #4154f1;
+    --header-bg: #ffffff;
+    --sidebar-bg: #ffffff;
+    --card-border: #ebeef4;
+    --input-bg: #ffffff;
+    --input-border: rgba(1, 41, 112, 0.2);
+    --chart-bg: #ffffff;
+    --chart-text: #012970;
+    --logo-color: #012970;
+    --menu-icon-color: #012970;
+    --table-bg: #ffffff;
+    --table-header-bg: #f6f6fe;
+    --table-row-bg: #ffffff;
+    --table-border: #ebeef4;
+    --breadcrumb-text: #012970;
+}
+
+/* Variables para el tema oscuro */
+.dark-mode {
+    --bg-main: #0f172a;
+    --bg-card: #1e293b;
+    --bg-sidebar: #1e293b;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #94a3b8;
+    --title-color: #e2e8f0;
+    --subtitle-color: #93c5fd;
+    --border-color: #334155;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --link-color: #60a5fa;
+    --link-hover-bg: #334155;
+    --link-hover-color: #93c5fd;
+    --header-bg: #1e293b;
+    --sidebar-bg: #1e293b;
+    --card-border: #334155;
+    --input-bg: #0f172a;
+    --input-border: #334155;
+    --chart-bg: #1e293b;
+    --chart-text: #e2e8f0;
+    --logo-color: #e2e8f0;
+    --menu-icon-color: #e2e8f0;
+    --table-bg: #1e293b;
+    --table-header-bg: #0f172a;
+    --table-row-bg: #1e293b;
+    --table-border: #334155;
+    --breadcrumb-text: #ffffff;
+}
+
+/* Aplicar variables a elementos */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+}
+
+.card-title {
+    color: var(--title-color) !important;
+}
+
+.card-title span {
+    color: var(--text-secondary) !important;
+}
+
+.pagetitle h1 {
+    color: var(--breadcrumb-text);
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+/* Cards */
+.card {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+
+/* Header y Sidebar */
+.header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.sidebar {
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+
+/* Enlaces y navegación */
+.nav-link {
+    color: var(--text-primary) !important;
+}
+
+.nav-link:hover {
+    background-color: var(--link-hover-bg) !important;
+    color: var(--link-hover-color) !important;
+}
+
+.nav-link.collapsed {
+    color: var(--text-primary) !important;
+}
+
+.nav-link i {
+    color: var(--text-primary) !important;
+}
+
+.sidebar-nav .nav-content a,
+.sidebar-nav .nav-content button {
+    color: var(--text-primary);
+}
+
+.sidebar-nav .nav-content a:hover,
+.sidebar-nav .nav-content button:hover {
+    color: var(--link-hover-color);
+    background-color: var(--link-hover-bg);
+}
+
+/* Inputs y formularios */
+input, select, textarea {
+    background-color: var(--input-bg) !important;
+    border-color: var(--input-border) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Tablas */
+.table {
+    color: var(--text-primary) !important;
+    background-color: var(--table-bg) !important;
+}
+
+.table thead {
+    background-color: var(--table-header-bg) !important;
+}
+
+.table thead th {
+    color: var(--text-primary) !important;
+    background-color: var(--table-header-bg) !important;
+}
+
+.table tbody {
+    background-color: var(--table-bg) !important;
+}
+
+.table tbody tr {
+    background-color: var(--table-row-bg) !important;
+}
+
+.table tbody td {
+    color: var(--text-primary) !important;
+    background-color: var(--table-row-bg) !important;
+}
+
+.table td,
+.table th {
+    border-color: var(--border-color) !important;
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+    background-color: var(--bg-card);
+    border-color: var(--border-color);
+}
+
+.dropdown-item {
+    color: var(--text-primary);
+}
+
+.dropdown-item:hover {
+    background-color: var(--link-hover-bg);
+    color: var(--link-hover-color);
+}
+
+/* Charts y gráficos */
+.chart {
+    background-color: var(--chart-bg) !important;
+}
+
+.chart-container {
+    background-color: var(--chart-bg) !important;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.echart {
+    background-color: var(--chart-bg) !important;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Ajustes específicos para gráficos en modo oscuro */
+.dark-mode .echart {
+    color: var(--chart-text) !important;
+}
+
+.dark-mode .echart canvas {
+    background-color: var(--chart-bg) !important;
+}
+
+.dark-mode .apexcharts-canvas {
+    background-color: var(--chart-bg) !important;
+}
+
+.dark-mode .apexcharts-text {
+    fill: var(--chart-text) !important;
+}
+
+.dark-mode .apexcharts-title-text,
+.dark-mode .apexcharts-legend-text {
+    color: var(--chart-text) !important;
+}
+
+.dark-mode .apexcharts-gridline {
+    stroke: var(--border-color) !important;
+}
+
+.dark-mode .apexcharts-tooltip {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Iconos */
+.card-icon {
+    background-color: var(--link-hover-bg) !important;
+    color: var(--link-color) !important;
+}
+
+/* Transiciones suaves */
+.header,
+.sidebar,
+.card,
+.nav-link,
+body,
+.dropdown-menu,
+input,
+select,
+textarea,
+.chart,
+.chart-container,
+.echart,
+.table,
+.table th,
+.table td {
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Ajustes específicos para modo oscuro */
+.dark-mode .bi {
+    color: var(--text-primary);
+}
+
+.dark-mode .nav-link.collapsed i {
+    color: var(--text-secondary) !important;
+}
+
+.dark-mode .search-bar {
+    background-color: var(--bg-card) !important;
+}
+
+.dark-mode .search-form input {
+    background-color: var(--input-bg) !important;
+    border-color: var(--input-border) !important;
+}
+
+.dark-mode .filter .icon {
+    color: var(--text-secondary);
+}
+
+.dark-mode .dropdown-header h6 {
+    color: var(--text-secondary);
+}
+
+/* Override de Bootstrap */
+.table {
+    --bs-table-bg: transparent !important;
+    --bs-table-accent-bg: transparent !important;
+    --bs-table-striped-bg: transparent !important;
+    --bs-table-striped-color: var(--text-primary) !important;
+    --bs-table-active-bg: transparent !important;
+    --bs-table-active-color: var(--text-primary) !important;
+    --bs-table-hover-bg: transparent !important;
+    --bs-table-hover-color: var(--text-primary) !important;
+}
+
+.dark-mode .table {
+    --bs-table-bg: transparent !important;
+    --bs-table-accent-bg: transparent !important;
+    --bs-table-striped-bg: transparent !important;
+    --bs-table-striped-color: var(--text-primary) !important;
+    --bs-table-active-bg: transparent !important;
+    --bs-table-active-color: var(--text-primary) !important;
+    --bs-table-hover-bg: transparent !important;
+    --bs-table-hover-color: var(--text-primary) !important;
+}
+
+/* Ajustes para elementos específicos */
+.dashboard .info-card h6 {
+    color: var(--title-color);
+}
+
+.dashboard .news .post-item {
+    border-bottom-color: var(--border-color);
+}
+
+.dashboard .news h4 a {
+    color: var(--title-color);
+}
+
+.dashboard .news h4 a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Subtítulos y elementos destacados */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.subtitle {
+    color: var(--subtitle-color);
+}
+
+/* Ajustes adicionales para el modo oscuro */
+.dark-mode .card-body {
+    color: var(--text-primary);
+}
+
+.dark-mode .nav-tabs .nav-link {
+    color: var(--text-primary);
+}
+
+.dark-mode .nav-tabs .nav-link.active {
+    color: var(--link-color);
+    border-color: var(--link-color);
+}
+
+/* Ajustes para los bordes y divisores */
+.border-bottom {
+    border-color: var(--border-color) !important;
+}
+
+.divider {
+    background-color: var(--border-color);
+}
+
+/* Logo y título principal */
+.logo span {
+    color: var(--logo-color) !important;
+}
+
+/* Icono del menú */
+.toggle-sidebar-btn {
+    color: var(--menu-icon-color) !important;
+}
+
+/* Tablas Recent Sales y Top Selling */
+.table {
+    background-color: var(--table-bg) !important;
+}
+
+.table thead th {
+    background-color: var(--table-header-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+.table tbody td {
+    color: var(--text-primary) !important;
+}
+
+/* Títulos principales */
+.logo span,
+.dashboard h1,
+.pagetitle h1 {
+    color: var(--title-color) !important;
+    font-weight: 600;
+}
+
+/* Ajustes para el breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-family: "Poppins", sans-serif;
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: var(--link-hover-color);
+}
+
+.breadcrumb .active {
+    color: var(--breadcrumb-text);
+    font-weight: 600;
+}
+
+/* Ajustes específicos para modo oscuro */
+.dark-mode .pagetitle h1 {
+    color: var(--breadcrumb-text);
+}
+
+.dark-mode .breadcrumb .active {
+    color: var(--breadcrumb-text);
+} 

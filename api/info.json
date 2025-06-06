@@ -1,0 +1,189 @@
+{
+    "cards": [
+      {
+        "__id": 1,
+        "name": "Sales",
+        "icon": "bi bi-cart",
+        "amount": 145,
+        "percentage": 0.12,
+        "active": true
+      },
+      {
+        "__id": 2,
+        "name": "Revenue",
+        "icon": "bi bi-currency-dollar",
+        "amount": 3246,
+        "percentage": 0.08,
+        "active": false
+      },
+      {
+        "__id": 3,
+        "name": "Customers",
+        "icon": "bi bi-people",
+        "amount": 1234,
+        "percentage": -0.11,
+        "active": false
+      }
+    ],
+    "news": [
+      {
+        "__id": 1,
+        "img": "http://localhost:4000/img/ai.jpg",
+        "title": "AI Integration Launch!",
+        "subtitle": "New AI-powered product recommendations now live",
+        "category": "Technology"
+      },
+      {
+        "__id": 2,
+        "img": "http://localhost:4000/img/sales.jpg",
+        "title": "Q4 Sales Record",
+        "subtitle": "Company breaks quarterly sales record with 250% growth",
+        "category": "Business"
+      },
+      {
+        "__id": 3,
+        "img": "http://localhost:4000/img/team.jpg",
+        "title": "Team Expansion",
+        "subtitle": "Welcome our new development team in Singapore",
+        "category": "Company"
+      },
+      {
+        "__id": 4,
+        "img": "http://localhost:4000/img/green.jpg",
+        "title": "Green Initiative",
+        "subtitle": "100% Carbon Neutral Operations Achieved",
+        "category": "Sustainability"
+      },
+      {
+        "__id": 5,
+        "img": "http://localhost:4000/img/movile.jpg",
+        "title": "Mobile App 2.0",
+        "subtitle": "Major update brings revolutionary features",
+        "category": "Product"
+      }
+    ],
+    "topselling": [
+      {
+        "__id": 1,
+        "preview": "producte-1.png",
+        "name": "Wireless Headphones",
+        "price": 46,
+        "sold": 98
+      },
+      {
+        "__id": 2,
+        "preview": "producte-2.png",
+        "name": "Smartwatch X2",
+        "price": 34,
+        "sold": 123
+      },
+      {
+        "__id": 3,
+        "preview": "producte-3.png",
+        "name": "Bluetooth Speaker",
+        "price": 23,
+        "sold": 105
+      },
+      {
+        "__id": 4,
+        "preview": "producte-4.jpg",
+        "name": "USB-C Charger",
+        "price": 12,
+        "sold": 110
+      },
+      {
+        "__id": 5,
+        "preview": "producte-5.png",
+        "name": "Gaming Mouse",
+        "price": 10,
+        "sold": 115
+      }
+    ],
+    "recentorders": [
+      {
+        "_id": 1,
+        "number": "#2457",
+        "customer": "Alice W. Johnson",
+        "product": "Wireless Headphones",
+        "price": 65,
+        "status": "Approved"
+      },
+      {
+        "_id": 2,
+        "number": "#2458",
+        "customer": "Carlos Mendez",
+        "product": "Smartwatch X2",
+        "price": 65,
+        "status": "Pending"
+      },
+      {
+        "_id": 3,
+        "number": "#2459",
+        "customer": "Elena Ruiz",
+        "product": "Bluetooth Speaker",
+        "price": 65,
+        "status": "Approved"
+      },
+      {
+        "_id": 4,
+        "number": "#2460",
+        "customer": "Henry Smith",
+        "product": "USB-C Charger",
+        "price": 65,
+        "status": "Rejected"
+      },
+      {
+        "_id": 5,
+        "number": "#2461",
+        "customer": "Nina Torres",
+        "product": "Gaming Mouse",
+        "price": 65,
+        "status": "Approved"
+      }
+    ],
+    "recentactivity": [
+      {
+        "_id": 1,
+        "time": "32 min",
+        "color": "text-success",
+        "content": "Alice W. Johnson completed a purchase",
+        "highlight": "completed"
+      },
+      {
+        "_id": 2,
+        "time": "56 min",
+        "color": "text-danger",
+        "content": "Carlos Mendez canceled an order",
+        "highlight": ""
+      },
+      {
+        "_id": 3,
+        "time": "2 hrs",
+        "color": "text-primary",
+        "content": "Elena Ruiz added items to the wishlist",
+        "highlight": ""
+      },
+      {
+        "_id": 4,
+        "time": "1 day",
+        "color": "text-info",
+        "content": "Henry Smith updated his profile",
+        "highlight": "updated"
+      },
+      {
+        "_id": 5,
+        "time": "2 days",
+        "color": "text-warning",
+        "content": "Nina Torres reported an issue",
+        "highlight": ""
+      },
+      {
+        "_id": 6,
+        "time": "4 weeks",
+        "color": "text-muted",
+        "content": "System maintenance completed",
+        "highlight": ""
+      }
+    ]
+  }
+  

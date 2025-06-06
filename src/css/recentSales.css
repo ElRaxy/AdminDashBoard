@@ -1,0 +1,132 @@
+.recent-sales {
+    font-size: 14px;
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.recent-sales .table-responsive {
+    background-color: var(--bg-card);
+}
+
+.recent-sales table {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    background-color: var(--bg-card);
+}
+
+.recent-sales table thead {
+    background-color: var(--table-header-bg);
+}
+
+.recent-sales table th {
+    border: 0;
+    padding: 12px 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom: none;
+}
+
+.recent-sales table tbody tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.recent-sales table tbody tr:last-of-type {
+    border-bottom: 0;
+}
+
+.recent-sales table tbody td,
+.recent-sales table tbody th {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border: none;
+    color: var(--text-primary);
+}
+
+.recent-sales table tbody td button,
+.recent-sales table tbody th button {
+    color: var(--link-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.recent-sales table tbody td button:hover,
+.recent-sales table tbody th button:hover {
+    color: var(--link-hover-color);
+}
+
+.recent-sales .badge {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.recent-sales .badge.bg-success {
+    color: #fff;
+    background-color: #2eca6a !important;
+}
+
+.recent-sales .badge.bg-warning {
+    color: #fff;
+    background-color: #ff771d !important;
+}
+
+.recent-sales .badge.bg-danger {
+    color: #fff;
+    background-color: #dc3545 !important;
+}
+
+/* Ajustes para el card title */
+.recent-sales .card-title {
+    padding: 15px 0 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--title-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.recent-sales .card-title span {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+/* Ajustes específicos para modo oscuro */
+.dark-mode .recent-sales {
+    background: var(--bg-card);
+}
+
+.dark-mode .recent-sales .table-responsive {
+    background-color: var(--bg-card);
+}
+
+.dark-mode .recent-sales table {
+    background-color: var(--bg-card);
+}
+
+.dark-mode .recent-sales table thead {
+    background-color: var(--table-header-bg);
+}
+
+.dark-mode .recent-sales table tbody tr {
+    border-color: var(--border-color);
+}
+
+.dark-mode .recent-sales table th,
+.dark-mode .recent-sales table td {
+    color: var(--text-primary);
+}
+
+.dark-mode .recent-sales table tbody td button,
+.dark-mode .recent-sales table tbody th button {
+    color: var(--link-color);
+}
+
+.dark-mode .recent-sales table tbody td button:hover,
+.dark-mode .recent-sales table tbody th button:hover {
+    color: var(--link-hover-color);
+}

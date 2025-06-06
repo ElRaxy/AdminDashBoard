@@ -1,0 +1,30 @@
+.dashboard .web-traffic {
+    padding: 20px;
+}
+
+.dashboard .web-traffic .card-body {
+    padding: 0 20px 20px 20px;
+}
+
+.dashboard .web-traffic .card-title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #012970;
+    font-family: "Poppins", sans-serif;
+}
+
+.dashboard .web-traffic .card-title span {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dashboard .web-traffic .chart-container {
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(1, 41, 112, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}

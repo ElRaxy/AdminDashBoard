@@ -1,0 +1,208 @@
+.dashboard .info-card{
+    padding-bottom: 10px;
+}
+
+.dashboard .info-card h6{
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.dashboard .card-icon{
+    font-size: 32px;
+    line-height: 0;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.dashboard .sales-card .card-icon{
+    color: var(--link-color);
+    background-color: var(--link-hover-bg);
+}
+
+.dashboard .revenue-card .card-icon{
+    color: #2eca6a;
+    background-color: var(--link-hover-bg);
+}
+
+.dashboard .customers-card .card-icon{
+    color: #ff771d;
+    background-color: var(--link-hover-bg);
+}
+
+.card-title {
+    padding: 15px 0 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--title-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.card-title span {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.filter {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.filter .icon {
+    color: var(--text-secondary);
+    padding-right: 20px;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.filter .icon:hover,
+.filter .icon:focus {
+    color: var(--link-color);
+}
+
+.filter .dropdown-header {
+    padding: 8px 15px;
+}
+
+.filter .dropdown-header h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.card-body {
+    padding: 0 20px 20px 20px;
+}
+
+.info-card {
+    position: relative;
+}
+
+.info-card .card-body {
+    padding: 0 20px 20px 20px;
+}
+
+.info-card .card-body .d-flex {
+    margin-top: 10px;
+}
+
+.info-card .card-body .ps-3 {
+    max-width: calc(100% - 63px);
+}
+
+@media (max-width: 1199px) {
+    .dashboard .info-card h6 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .dashboard .info-card h6 {
+        font-size: 1.25rem;
+    }
+    .dashboard .card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+
+/* Card */
+.card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.card-header .card-footer {
+    border-color: #ebeef4;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.card-title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #012970;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+}
+
+.card-title span {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-body {
+    padding: 0 20px 20px 20px;
+}
+
+.card-img-overlay {
+    background-color: rgba(255,255,255,0.6);
+}
+
+/* Ajustes para modo oscuro */
+.dark-mode .dashboard .info-card h6 {
+    color: var(--text-primary);
+}
+
+.dark-mode .dashboard .card-icon {
+    background-color: var(--link-hover-bg);
+}
+
+.dark-mode .dashboard .sales-card .card-icon {
+    color: var(--link-color);
+}
+
+.dark-mode .dashboard .revenue-card .card-icon {
+    color: #2eca6a;
+}
+
+.dark-mode .dashboard .customers-card .card-icon {
+    color: #ff771d;
+}
+
+.dark-mode .card-title {
+    color: var(--title-color);
+}
+
+.dark-mode .card-title span {
+    color: var(--text-secondary);
+}
+
+.dark-mode .filter .icon {
+    color: var(--text-secondary);
+}
+
+.dark-mode .filter .icon:hover,
+.dark-mode .filter .icon:focus {
+    color: var(--link-color);
+}
+
+.dark-mode .filter .dropdown-header h6 {
+    color: var(--text-secondary);
+}

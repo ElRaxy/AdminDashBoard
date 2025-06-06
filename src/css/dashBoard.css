@@ -1,0 +1,93 @@
+.dashboard {
+    padding: 20px;
+}
+
+.dashboard .row {
+    margin-bottom: 20px;
+}
+
+.dashboard .filter {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.dashboard .filter .icon {
+    color: #aab7cf;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.dashboard .filter .icon:hover,
+.dashboard .filter .icon:focus {
+    color: #4154f1;
+}
+
+.dashboard .filter .dropdown-header {
+    padding: 8px 15px;
+}
+
+.dashboard .filter .dropdown-header h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #aab7cf;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.dashboard .filter .dashboard-item {
+    padding: 8px 15px;
+}
+
+.dashboard .card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(1, 41, 112, 0.1);
+}
+
+.dashboard .card-body {
+    padding: 20px;
+}
+
+.dashboard .card-title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #012970;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.dashboard .card-title span {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+    .dashboard {
+        padding: 15px;
+    }
+    
+    .dashboard .row {
+        margin-bottom: 15px;
+    }
+}
+
+/* Container adjustments */
+.dashboard .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Table adjustments */
+.dashboard .table {
+    margin-bottom: 0;
+    width: 100%;
+}

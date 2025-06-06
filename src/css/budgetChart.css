@@ -1,0 +1,18 @@
+.chart {
+    box-shadow: 0 0 20px rgba(1, 41, 112, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chart {
+        min-height: 350px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .chart {
+        min-height: 300px !important;
+        padding: 15px !important;
+    }
+} 

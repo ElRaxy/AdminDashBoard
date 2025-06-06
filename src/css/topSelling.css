@@ -1,0 +1,172 @@
+.top-selling {
+    font-size: 14px;
+}
+
+.top-selling .table {
+    margin-bottom: 0;
+}
+
+.top-selling .product-preview {
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: var(--bg-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--link-color);
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.top-selling .product-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.top-selling img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.top-selling .card-title {
+    padding: 15px 0 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--title-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.top-selling .card-title span {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.top-selling .card-body {
+    padding: 20px 20px 0 20px;
+    background-color: var(--bg-card) !important;
+}
+
+.top-selling .table thead th {
+    border: 0;
+    padding: 12px 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    vertical-align: middle;
+}
+
+.top-selling .table tbody td {
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+    color: var(--text-primary);
+}
+
+.top-selling .table tbody tr:last-child td {
+    padding-bottom: 20px;
+}
+
+.top-selling .table tbody td a,
+.top-selling .table tbody td button {
+    color: var(--link-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.top-selling .table tbody td a:hover,
+.top-selling .table tbody td button:hover {
+    color: var(--link-hover-color);
+}
+
+/* Ajustes específicos para modo oscuro */
+.dark-mode .top-selling {
+    background: var(--bg-card);
+}
+
+.dark-mode .top-selling .table-responsive {
+    background-color: var(--bg-card);
+}
+
+.dark-mode .top-selling .table {
+    background-color: var(--bg-card);
+}
+
+.dark-mode .top-selling .table thead {
+    background: var(--table-header-bg);
+}
+
+.dark-mode .top-selling .table thead th {
+    color: var(--text-primary);
+}
+
+.dark-mode .top-selling .table tbody td {
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.dark-mode .top-selling .table tbody td a,
+.dark-mode .top-selling .table tbody td button {
+    color: var(--link-color);
+}
+
+.dark-mode .top-selling .table tbody td a:hover,
+.dark-mode .top-selling .table tbody td button:hover {
+    color: var(--link-hover-color);
+}
+
+.dark-mode .top-selling .product-preview {
+    background-color: var(--bg-card);
+    border-color: var(--border-color);
+}
+
+/* Ajustes para el card title */
+.top-selling .card-title {
+    padding: 20px 0 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--title-color);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.top-selling .card-title span {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+/* Ajustes para el card body */
+.top-selling .card-body {
+    padding: 0 20px;
+    background-color: var(--bg-card) !important;
+}
+
+/* Ajustes para la tabla */
+.top-selling .table {
+    margin: 0;
+}
+
+.top-selling .table tbody td a,
+.top-selling .table tbody td button {
+    color: var(--link-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.top-selling .table tbody td a:hover,
+.top-selling .table tbody td button:hover {
+    color: var(--link-hover-color);
+}
+
+/* Ajuste específico para el último elemento */
+.top-selling .table-responsive {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+}
