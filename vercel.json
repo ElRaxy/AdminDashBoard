@@ -16,27 +16,28 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/middleware.js"
+      "dest": "api/middleware.js"
     },
     {
       "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "dest": "api/$1"
     },
     {
       "src": "/favicon.ico",
-      "dest": "/favicon.ico"
+      "dest": "build/favicon.ico"
     },
     {
       "src": "/manifest.json",
-      "dest": "/manifest.json"
+      "dest": "build/manifest.json"
     },
     {
       "src": "/(.*)\\.(?:png|jpg|jpeg|gif|svg|ico)$",
-      "dest": "/$1"
+      "headers": { "cache-control": "public, max-age=31536000, immutable" },
+      "dest": "build/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "build/index.html"
     }
   ]
 } 
