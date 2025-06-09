@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import config from '../config'
 
 function NewsPostItem({ item }) {
   /**
@@ -16,10 +17,10 @@ function NewsPostItem({ item }) {
     setImageError(true);
   }
 
-  // Construir la URL de la imagen desde la carpeta public
+  // Construir la URL de la imagen usando la ruta de la API
   const imageUrl = item.img.startsWith('http') 
     ? item.img 
-    : item.img; // Las imágenes ahora están en la carpeta public
+    : `${config.apiUrl}/img${item.img.replace('/img', '')}`;
 
   return (
     <div className="post-item clearfix">
