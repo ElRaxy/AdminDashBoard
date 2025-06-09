@@ -8,6 +8,11 @@
     background-color: #f6f9ff;
 }
 
+/* Estilo para modo oscuro */
+[data-theme='dark'] .dashboard .news .post-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .dashboard .news .post-item + .post-item {
     margin-top: 15px;
     border-top: 1px solid #f0f0f0;
