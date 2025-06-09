@@ -17,9 +17,10 @@ function NewsPostItem({ item }) {
     setImageError(true);
   }
 
+  // Construir la URL de la imagen usando la ruta correcta
   const imageUrl = item.img.startsWith('http') 
     ? item.img 
-    : `${config.apiUrl}${item.img}`;
+    : `${config.apiUrl}/api${item.img}`;
 
   return (
     <div className="post-item clearfix">
