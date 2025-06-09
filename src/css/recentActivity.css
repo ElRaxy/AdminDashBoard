@@ -43,3 +43,28 @@
 .dashboard .activity .activity-item:last-child .activity-contect{
     padding-bottom: 0;
 }
+
+/* Estilos para modo oscuro */
+[data-theme='dark'] .dashboard .activity .activity-item .activity-label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme='dark'] .dashboard .activity .activity-item .activity-label::before {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='dark'] .dashboard .activity .activity-item .activity-badge {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='dark'] .dashboard .activity .activity-item .activity-content {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Resaltar palabras en negrita en modo oscuro */
+[data-theme='dark'] .dashboard .activity strong,
+[data-theme='dark'] .dashboard .activity b,
+[data-theme='dark'] .dashboard .activity .highlight {
+    color: #4154f1;
+    font-weight: 600;
+}

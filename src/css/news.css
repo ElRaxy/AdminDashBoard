@@ -8,9 +8,35 @@
     background-color: #f6f9ff;
 }
 
-/* Estilo para modo oscuro */
+/* Estilos para modo oscuro */
+[data-theme='dark'] .dashboard .news .post-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 [data-theme='dark'] .dashboard .news .post-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .dashboard .news h4 a {
+    color: #fff;
+}
+
+[data-theme='dark'] .dashboard .news h4 a:hover {
+    color: #4154f1;
+}
+
+[data-theme='dark'] .dashboard .news p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme='dark'] .news .post-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .news .post-item .category {
+    background: #4154f1;
+    color: #fff;
 }
 
 .dashboard .news .post-item + .post-item {
