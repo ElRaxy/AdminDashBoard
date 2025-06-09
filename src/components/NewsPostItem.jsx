@@ -1,4 +1,6 @@
 import React from 'react'
+import config from '../config'
+import defaultImage from '../assets/default-news.jpg'
 
 function NewsPostItem({item}) {
   /**
@@ -10,9 +12,22 @@ function NewsPostItem({item}) {
     console.log('View full article:', item.title)
   }
 
+  const handleImageError = (e) => {
+    e.target.src = defaultImage;
+  }
+
+  const imageUrl = item.img.startsWith('http') 
+    ? item.img 
+    : `${config.apiUrl}${item.img}`;
+
   return (
     <div className="post-item clearfix">
-      <img src={item.img} alt={item.title} />
+      <img 
+        src={imageUrl} 
+        alt={item.title}
+        className="news-image"
+        onError={handleImageError}
+      />
       <h4>
         <button 
           onClick={handleViewArticle}
@@ -23,6 +38,7 @@ function NewsPostItem({item}) {
         </button>
       </h4>
       <p>{item.subtitle}</p>
+      <span className="category">{item.category}</span>
     </div>
   )
 }
