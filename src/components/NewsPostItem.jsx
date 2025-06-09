@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import config from '../config'
 
 function NewsPostItem({ item }) {
   /**
@@ -17,10 +16,10 @@ function NewsPostItem({ item }) {
     setImageError(true);
   }
 
-  // Construir la URL de la imagen usando el endpoint de json-server
+  // Construir la URL de la imagen desde la carpeta public
   const imageUrl = item.img.startsWith('http') 
     ? item.img 
-    : item.img; // Ya viene con /img/ desde el JSON
+    : item.img; // Las imágenes ahora están en la carpeta public
 
   return (
     <div className="post-item clearfix">
