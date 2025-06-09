@@ -1,8 +1,10 @@
 const jsonServer = require('json-server');
 const path = require('path');
-const express = require('json-server/node_modules/express');
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, 'info.json'));
+const middlewares = jsonServer.defaults({
+    static: path.join(__dirname)
+});
 
 // Configurar CORS
 server.use((req, res, next) => {
@@ -12,30 +14,24 @@ server.use((req, res, next) => {
     next();
 });
 
-// Servir archivos estáticos desde la carpeta img
-server.use('/api/img', express.static(path.join(__dirname, 'img'), {
-    setHeaders: (res) => {
-        res.set('Access-Control-Allow-Origin', '*');
-        res.set('Cache-Control', 'public, max-age=31536000');
-    }
-}));
+server.use(middlewares);
 
-// Usar los middlewares por defecto de json-server
-server.use(jsonServer.defaults());
-
-// Añadir prefijo /api a todas las rutas del router
+// Remover el prefijo /api de las rutas antes de pasarlas al router
 server.use('/api', (req, res, next) => {
-    if (req.url.startsWith('/img/')) {
+    if (req.url === '/') {
         next();
     } else {
-        router(req, res, next);
+        req.url = req.url.replace('/api', '');
+        next();
     }
 });
 
+server.use(router);
+
 // Manejar errores
 server.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).json({ error: 'Something broke!' });
+    console.error('Error:', err);
+    res.status(500).json({ error: 'Internal Server Error' });
 });
 
 module.exports = server; 
