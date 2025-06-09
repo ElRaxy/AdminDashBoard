@@ -6,6 +6,10 @@
       "use": "@vercel/node"
     },
     {
+      "src": "api/img/*",
+      "use": "@vercel/static"
+    },
+    {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
@@ -15,12 +19,12 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "api/middleware.js"
+      "src": "/api/img/(.*)",
+      "dest": "/api/img/$1"
     },
     {
-      "src": "/static/(.*)",
-      "dest": "api/$1"
+      "src": "/api/(.*)",
+      "dest": "api/middleware.js"
     },
     {
       "src": "/favicon.ico",

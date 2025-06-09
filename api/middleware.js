@@ -23,9 +23,9 @@ server.use((err, req, res, next) => {
 server.use(middlewares);
 
 // Servir archivos estáticos desde la carpeta img
-server.use('/static', (req, res, next) => {
+server.use('/img', (req, res, next) => {
     try {
-        const staticMiddleware = jsonServer.static(path.join(__dirname));
+        const staticMiddleware = jsonServer.static(path.join(__dirname, 'img'));
         staticMiddleware(req, res, next);
     } catch (error) {
         console.error('Error serving static file:', error);

@@ -20,7 +20,7 @@ function NewsPostItem({ item }) {
   // Construir la URL de la imagen usando el endpoint de json-server
   const imageUrl = item.img.startsWith('http') 
     ? item.img 
-    : `${config.apiUrl}/static${item.img}`;
+    : item.img; // Ya viene con /img/ desde el JSON
 
   return (
     <div className="post-item clearfix">
