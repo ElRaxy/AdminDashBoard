@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import config from '../config'
 
 function NewsPostItem({ item }) {
   /**
@@ -16,6 +17,10 @@ function NewsPostItem({ item }) {
     setImageError(true);
   }
 
+  const imageUrl = item.img.startsWith('http') 
+    ? item.img 
+    : `${config.apiUrl}${item.img}`;
+
   return (
     <div className="post-item clearfix">
       {imageError ? (
@@ -24,7 +29,7 @@ function NewsPostItem({ item }) {
         </div>
       ) : (
         <img 
-          src={item.img} 
+          src={imageUrl} 
           alt={item.title}
           onError={handleImageError}
           className="news-image"

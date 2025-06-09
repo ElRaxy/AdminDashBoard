@@ -12,6 +12,14 @@
     color: #012970;
     margin-right: 25px;
     position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.header-nav .nav-icon:hover {
+    color: #4154f1;
 }
 
 .header-nav .nav-profile{
@@ -33,6 +41,30 @@
     font-weight: normal;
     font-size: 12px;
     padding: 3px 6px;
+}
+
+/* Estilos específicos para el botón de tema */
+.header-nav .nav-item .nav-link.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.header-nav .nav-item .nav-link.nav-icon i {
+    font-size: 22px;
+    line-height: 0;
+}
+
+/* Dark mode styles */
+.dark-mode .header-nav .nav-icon {
+    color: #e2e8f0;
+}
+
+.dark-mode .header-nav .nav-icon:hover {
+    color: #93c5fd;
 }
 
 /* Estilos compartidos para dropdowns */

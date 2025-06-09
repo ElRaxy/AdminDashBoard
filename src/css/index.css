@@ -8,21 +8,46 @@
 
 :root {
   scroll-behavior: smooth;
+  /* Light theme variables */
+  --bg-body: #f6f9ff;
+  --bg-sidebar: #fff;
+  --text-primary: #012970;
+  --text-secondary: #899bbd;
+  --link-color: #4154f1;
+  --link-hover-color: #717ff5;
+  --link-hover-bg: #f6f9ff;
+  --card-bg: #fff;
+  --card-shadow: rgba(1, 41, 112, 0.1);
+  --border-color: #ebeef4;
+}
+
+/* Dark theme variables */
+.dark-mode {
+  --bg-body: #1a1a1a;
+  --bg-sidebar: #242424;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --link-color: #7b8aff;
+  --link-hover-color: #9ba5ff;
+  --link-hover-bg: #2a2a2a;
+  --card-bg: #242424;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --border-color: #333333;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #f6f9ff;
-  color: #444444;
+  background: var(--bg-body);
+  color: var(--text-primary);
 }
 
 a {
   text-decoration: none;
-  color: #4154f1;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #717ff5;
+  color: var(--link-hover-color);
   text-decoration: none;
 }
 
@@ -51,7 +76,7 @@ a:hover {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #012970;
+  color: var(--text-primary);
 }
 
 /* Card styles */
@@ -59,14 +84,15 @@ a:hover {
   margin-bottom: 30px;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 0 30px var(--card-shadow);
+  background-color: var(--card-bg);
 }
 
 .card-header,
 .card-footer {
-  border-color: #ebeef4;
-  background-color: #fff;
-  color: #798eb3;
+  border-color: var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-secondary);
   padding: 15px;
 }
 
@@ -74,12 +100,12 @@ a:hover {
   padding: 20px 0 15px 0;
   font-size: 18px;
   font-weight: 500;
-  color: #012970;
+  color: var(--text-primary);
   font-family: "Poppins", sans-serif;
 }
 
 .card-title span {
-  color: #899bbd;
+  color: var(--text-secondary);
   font-size: 14px;
   font-weight: 400;
 }
@@ -115,7 +141,7 @@ a:hover {
 }
 
 .dashboard .filter .icon {
-  color: #aab7cf;
+  color: var(--text-secondary);
   padding-right: 20px;
   padding-bottom: 5px;
   transition: 0.3s;
@@ -124,7 +150,7 @@ a:hover {
 
 .dashboard .filter .icon:hover,
 .dashboard .filter .icon:focus {
-  color: #4154f1;
+  color: var(--link-color);
 }
 
 .dashboard .filter .dropdown-header {
@@ -136,7 +162,7 @@ a:hover {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #aab7cf;
+  color: var(--text-secondary);
   margin-bottom: 0;
   padding: 0;
 } 

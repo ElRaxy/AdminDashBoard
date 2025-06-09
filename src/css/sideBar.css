@@ -11,7 +11,7 @@
     scrollbar-width: thin;
     scrollbar-color: #aab7cf transparent;
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-    background-color: #fff;
+    background-color: var(--bg-sidebar);
 }
 
 @media (max-width: 1199px) {
@@ -27,11 +27,11 @@
 .sidebar::-webkit-scrollbar {
     width: 5px;
     height: 8px;
-    background-color: #fff;
+    background-color: var(--bg-sidebar);
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background-color: #aab7cf;
+    background-color: var(--text-secondary);
 }
 
 .toggle-sidebar .sidebar {
@@ -63,7 +63,7 @@
 .sidebar-nav .nav-heading {
     font-size: 11px;
     text-transform: uppercase;
-    color: #899bbd;
+    color: var(--text-secondary);
     font-weight: 600;
     margin: 10px 0 5px 15px;
 }
@@ -73,8 +73,8 @@
     align-items: center;
     font-size: 15px;
     font-weight: 600;
-    color: #4154f1;
-    background: #f6f9ff;
+    color: var(--link-color);
+    background: var(--link-hover-bg);
     padding: 10px 15px;
     border-radius: 4px;
     transition: 0.3s;
@@ -86,25 +86,25 @@
 .sidebar-nav .nav-link i {
     font-size: 16px;
     margin-right: 10px;
-    color: #4154f1;
+    color: var(--link-color);
 }
 
 .sidebar-nav .nav-link.collapsed {
-    color: #012970;
-    background: #fff;
+    color: var(--text-primary);
+    background: var(--bg-sidebar);
 }
 
 .sidebar-nav .nav-link.collapsed i {
-    color: #899bbd;
+    color: var(--text-secondary);
 }
 
 .sidebar-nav .nav-link:hover {
-    color: #4154f1;
-    background: #f6f9ff;
+    color: var(--link-hover-color);
+    background: var(--link-hover-bg);
 }
 
 .sidebar-nav .nav-link:hover i {
-    color: #4154f1;
+    color: var(--link-hover-color);
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -128,7 +128,7 @@
     align-items: center;
     font-size: 14px;
     font-weight: 600;
-    color: #012970;
+    color: var(--text-primary);
     padding: 10px 0 10px 40px;
     transition: 0.3s;
     width: 100%;
@@ -148,11 +148,33 @@
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content button:hover {
-    color: #4154f1;
+    color: var(--link-hover-color);
 }
 
 .sidebar-nav .nav-content a:hover i,
 .sidebar-nav .nav-content button:hover i {
-    background-color: #4154f1;
+    background-color: var(--link-hover-color);
+}
+
+/* Dark mode adjustments */
+.dark-mode .sidebar {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .sidebar-nav .nav-link {
+    color: var(--link-color);
+}
+
+.dark-mode .sidebar-nav .nav-link.collapsed {
+    background: var(--bg-sidebar);
+}
+
+.dark-mode .sidebar-nav .nav-link:hover {
+    background: var(--link-hover-bg);
+}
+
+.dark-mode .sidebar-nav .nav-content a:hover i,
+.dark-mode .sidebar-nav .nav-content button:hover i {
+    background-color: var(--link-hover-color);
 }
 
