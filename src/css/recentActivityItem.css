@@ -1,5 +1,5 @@
 .activity-item {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .activity-item .activity-content {
@@ -17,4 +17,22 @@
 
 .activity-badge {
     margin-top: 5px;
+}
+
+.activity-content button.fw-bold {
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.activity-content button.fw-bold:hover {
+    color: #4154f1 !important;
+}
+
+/* Estilos para modo oscuro */
+[data-theme='dark'] .activity-content button.fw-bold {
+    color: #4154f1 !important;
+}
+
+[data-theme='dark'] .activity-content button.fw-bold:hover {
+    color: #6c7bff !important;
 }

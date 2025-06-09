@@ -21,10 +21,10 @@ function RecentActivityItem({ item }) {
             <div className="activity-content">
                 {item.content.substring(0, item.content.indexOf(item.highlight))}
                 <button 
-                  onClick={() => handleViewActivityDetails(item.highlight)}
-                  className='fw-bold text-dark border-0 bg-transparent p-0'
+                    onClick={() => handleViewActivityDetails(item.highlight)}
+                    className='fw-bold border-0 bg-transparent p-0'
                 >
-                  {item.highlight}
+                    {item.highlight}
                 </button>
                 {item.content.substring(item.content.indexOf(item.highlight) + item.highlight.length)}
             </div>

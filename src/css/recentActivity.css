@@ -1,5 +1,6 @@
 .dashboard .activity{
     font-size: 14px;
+    color: #4B5563;  /* Gris oscuro agradable */
 }
 
 .dashboard .activity .activity-item .activity-label{
@@ -58,7 +59,7 @@
 }
 
 [data-theme='dark'] .dashboard .activity .activity-item .activity-content {
-    color: rgba(255, 255, 255, 0.9);
+    color: #E5E7EB;  /* Gris claro para modo oscuro */
 }
 
 /* Resaltar palabras en negrita en modo oscuro */
