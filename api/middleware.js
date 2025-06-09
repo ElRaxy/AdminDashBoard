@@ -16,6 +16,9 @@ server.use((req, res, next) => {
 
 server.use(middlewares);
 
+// Servir archivos estáticos desde la carpeta img
+server.use('/static', jsonServer.static(path.join(__dirname)));
+
 // Añadir prefijo /api a todas las rutas
 server.use('/api', router);
 
