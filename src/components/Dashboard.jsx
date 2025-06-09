@@ -39,7 +39,7 @@ function Dashboard() {
                                 <Reports />
                             </div>
                         </div>
-                        <div className="row mt-4">
+                        <div className="row mt-4"> 
                             <div className="col-12">
                                 <RecentSales />
                             </div>

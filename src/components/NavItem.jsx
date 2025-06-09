@@ -17,8 +17,8 @@ function NavItem({nav}) {
         className='nav-link collapsed border-0 bg-transparent w-100 text-start'
         aria-label={`Navegar a ${nav.name}`}
       >
-        <i className={nav.icon}></i>
-        <span>{nav.name}</span>
+            <i className={nav.icon}></i>
+            <span>{nav.name}</span>
       </button>
     </li>
   )
