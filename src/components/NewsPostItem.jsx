@@ -1,19 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import config from '../config'
-import defaultImage from '../assets/default-news.jpg'
 
-function NewsPostItem({item}) {
+function NewsPostItem({ item }) {
   /**
    * Abre el artículo completo en un modal o nueva vista
    * @param {Object} item - El artículo de noticias a mostrar
    */
+  const [imageError, setImageError] = useState(false);
+
   const handleViewArticle = () => {
     // Implementación para ver artículo completo
     console.log('View full article:', item.title)
   }
 
-  const handleImageError = (e) => {
-    e.target.src = defaultImage;
+  const handleImageError = () => {
+    setImageError(true);
   }
 
   const imageUrl = item.img.startsWith('http') 
@@ -22,23 +23,25 @@ function NewsPostItem({item}) {
 
   return (
     <div className="post-item clearfix">
-      <img 
-        src={imageUrl} 
-        alt={item.title}
-        className="news-image"
-        onError={handleImageError}
-      />
-      <h4>
-        <button 
-          onClick={handleViewArticle}
-          className="border-0 bg-transparent p-0 text-start"
-          aria-label={`Read full article: ${item.title}`}
-        >
-          {item.title}
-        </button>
-      </h4>
-      <p>{item.subtitle}</p>
-      <span className="category">{item.category}</span>
+      {imageError ? (
+        <div className="news-image-fallback">
+          <i className="bi bi-image text-secondary"></i>
+        </div>
+      ) : (
+        <img 
+          src={imageUrl} 
+          alt={item.title}
+          onError={handleImageError}
+          className="news-image"
+        />
+      )}
+      <div className="post-content">
+        <h4>
+          <a href="#">{item.title}</a>
+        </h4>
+        <p>{item.subtitle}</p>
+        <span className="category">{item.category}</span>
+      </div>
     </div>
   )
 }
