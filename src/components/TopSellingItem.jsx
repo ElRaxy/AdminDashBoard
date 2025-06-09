@@ -1,4 +1,5 @@
 import React from 'react'
+import config from '../config'
 
 function TopSellingItem({ item }) {
   /**
@@ -20,7 +21,7 @@ function TopSellingItem({ item }) {
         >
           <div className="product-preview">
             <img 
-              src={require(`../assets/itemns/${item.preview}`)}
+              src={`${config.apiUrl}/img/${item.preview}`}
               alt={item.name}
             />
           </div>
