@@ -8,12 +8,13 @@ import RecentActivity from './RecentActivity.jsx'
 import BudgetReport from './BudgetReport.jsx'
 import WebTrafic from './WebTrafic.jsx'
 import News from './News.jsx'
+import config from '../config'
 
 function Dashboard() {
     const [cards, setCards] = useState([])
 
     const fetchData = async () => {
-        const response = await fetch('http://localhost:4000/cards')
+        const response = await fetch(`${config.apiUrl}/cards`)
         const data = await response.json()
         setCards(data)
     }

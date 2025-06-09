@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import '../css/recentSales.css'
 import CardFilter from './CardFilter.jsx'
 import RecentSalesTable from './RecentSalesTable.jsx'
+import config from '../config'
 
 function RecentSales() {
     const [items, setItems] = useState([])
@@ -11,7 +12,7 @@ function RecentSales() {
     }
 
     const fetchItems = async () => {
-        const response = await fetch('http://localhost:4000/recentorders')
+        const response = await fetch(`${config.apiUrl}/recentorders`)
         const data = await response.json()
         setItems(data)
     }

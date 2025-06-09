@@ -28,35 +28,35 @@
     "news": [
       {
         "__id": 1,
-        "img": "http://localhost:4000/img/ai.jpg",
+        "img": "/img/ai.jpg",
         "title": "AI Integration Launch!",
         "subtitle": "New AI-powered product recommendations now live",
         "category": "Technology"
       },
       {
         "__id": 2,
-        "img": "http://localhost:4000/img/sales.jpg",
+        "img": "/img/sales.jpg",
         "title": "Q4 Sales Record",
         "subtitle": "Company breaks quarterly sales record with 250% growth",
         "category": "Business"
       },
       {
         "__id": 3,
-        "img": "http://localhost:4000/img/team.jpg",
+        "img": "/img/team.jpg",
         "title": "Team Expansion",
         "subtitle": "Welcome our new development team in Singapore",
         "category": "Company"
       },
       {
         "__id": 4,
-        "img": "http://localhost:4000/img/green.jpg",
+        "img": "/img/green.jpg",
         "title": "Green Initiative",
         "subtitle": "100% Carbon Neutral Operations Achieved",
         "category": "Sustainability"
       },
       {
         "__id": 5,
-        "img": "http://localhost:4000/img/movile.jpg",
+        "img": "/img/movile.jpg",
         "title": "Mobile App 2.0",
         "subtitle": "Major update brings revolutionary features",
         "category": "Product"

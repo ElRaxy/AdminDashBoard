@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import '../css/topSelling.css'
 import CardFilter from './CardFilter.jsx'
 import TopSellingItem from './TopSellingItem.jsx'
+import config from '../config'
 
 function TopSelling() {
     const [items, setItems] = useState([])
@@ -12,7 +13,7 @@ function TopSelling() {
     }
     
     const fetchData = async () => {
-        const response = await fetch('http://localhost:4000/topselling')
+        const response = await fetch(`${config.apiUrl}/topselling`)
         const data = await response.json()
         setItems(data)
     }
